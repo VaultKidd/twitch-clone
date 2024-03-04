@@ -37,4 +37,3 @@ export const Container = ({
      );
 };
  
-export default Container;
