@@ -14,5 +14,5 @@ className,
         )}>
             Live
         </div>
-    )
-}
+    );
+};

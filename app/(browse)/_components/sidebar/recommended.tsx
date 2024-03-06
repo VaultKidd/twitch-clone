@@ -1,11 +1,11 @@
 "use client";
 
 import { useSidebar } from "@/store/use-sidebar";
-import { user } from "@prisma/client";
+import { User } from "@prisma/client";
 import { UserItem, UserItemSkeleton } from "./user-item";
 
 interface RecommendedProps {
-    data: user[];
+    data: User[];
 }
 
 export const Recommended = ({

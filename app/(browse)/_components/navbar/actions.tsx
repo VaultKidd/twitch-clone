@@ -10,7 +10,9 @@ export const Actions = async () => {
     <div className="flex items-center justify-end gap-x-2 ml-4 lg:ml-0">
       {!user && (
         <SignInButton>
-          <Button size="sm" variant="primary">Login</Button>
+          <Button size="sm" variant="primary">
+            Login
+          </Button>
         </SignInButton>
       )}
       {!!user && (
@@ -25,8 +27,7 @@ export const Actions = async () => {
               <span className="hidden lg:block">Dashboard</span>
             </Link>
           </Button>
-          <UserButton
-          afterSignOutUrl="/" />
+          <UserButton afterSignOutUrl="/" />
         </div>
       )}
     </div>
