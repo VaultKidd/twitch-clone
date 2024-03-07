@@ -61,6 +61,10 @@ export const followUser = async (id: string) => {
             followerId: self.id,
             followingId: otherUser.id,
         },
+        include: {
+            following: true,
+            follower: true,
+          },
     });
 
     return follow;
