@@ -35,10 +35,10 @@ export const getRecommended = async () => {
               followedBy: {
                 some: {
                   followerId: userId,
-                }
-              }
-            }
-          }
+                },
+              },
+            },
+          },
         ],
       },
       orderBy: {
