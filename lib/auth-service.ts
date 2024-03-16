@@ -35,7 +35,7 @@ export const getSelfByUsername = async (username: string) => {
   }
 
   if (self.username !== self.username) {
-    throw new Error("Unauthorized")
+    throw new Error("Unauthorized");
   }
 
   return user;
