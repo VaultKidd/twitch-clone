@@ -34,7 +34,7 @@ export const getSelfByUsername = async (username: string) => {
     throw new Error("User not found");
   }
 
-  if (self.username !== self.username) {
+  if (self.username !== user.username) {
     throw new Error("Unauthorized");
   }
 

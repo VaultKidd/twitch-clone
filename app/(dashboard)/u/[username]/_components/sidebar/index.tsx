@@ -1,9 +1,10 @@
-import { Wrapper } from "../navbar/wrapper";
+import { Wrapper } from "./wrapper";
+
 
 export const Sidebar = () => {
     return (
         <Wrapper>
-            Sidebar
+            Sidebar!
         </Wrapper>
     );
 };
