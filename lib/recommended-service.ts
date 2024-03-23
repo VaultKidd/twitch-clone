@@ -11,7 +11,23 @@ export const getRecommended = async () => {
     userId = null;
   }
 
-  let users: {
+  let users: ({
+    stream: {
+      id: string;
+      name: string;
+      thumbnailUrl: string | null;
+      ingressId: string | null;
+      serverUrl: string | null;
+      streamKey: string | null;
+      isLive: boolean;
+      isChatEnabled: boolean;
+      isChatDelayed: boolean;
+      isChatFollowersOnly: boolean;
+      userId: string;
+      createdAt: Date;
+      updatedAt: Date;
+    } | null;
+  } & {
     id: string;
     username: string;
     imageUrl: string;
@@ -19,7 +35,7 @@ export const getRecommended = async () => {
     bio: string | null;
     createdAt: Date;
     updatedAt: Date;
-  }[] = [];
+  })[] = [];
 
   if (userId) {
     users = await db.user.findMany({
